@@ -22,10 +22,12 @@ class App extends React.Component {
     console.log("App.js render this.state -->", this.state);
 
 		return(
+
       <>
-			<h1>Game of thrones</h1>
-      <Character></Character>
-      </>
+			<h1>Game of thronessssss</h1>
+      <Character/> {this.state.characters.map((item) => <Character/> )}
+      </> 
+      
 		)
 	}
 }
